@@ -1,8 +1,14 @@
 import 'react-native-reanimated';
-import Home from './src/screens/Home';
+import {ThemeProvider} from 'styled-components';
+import Scanner from './src/screens/Scanner';
+import theme from './src/styles/theme';
 
 const App = () => {
-  return <Home />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Scanner />
+    </ThemeProvider>
+  );
 };
 
 export default App;
