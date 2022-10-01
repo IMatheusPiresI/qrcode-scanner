@@ -1,12 +1,13 @@
 import 'react-native-reanimated';
+import 'react-native-gesture-handler';
 import {ThemeProvider} from 'styled-components';
-import Scanner from './src/screens/Scanner';
 import theme from './src/styles/theme';
+import AppRoutes from './src/routes';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Scanner />
+      <AppRoutes />
     </ThemeProvider>
   );
 };

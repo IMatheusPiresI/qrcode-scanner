@@ -780,6 +780,13 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@egjs/hammerjs@^2.0.17":
+  version "2.0.17"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+  integrity sha1-XcAq91pqBuTC2wICyuOMkmOJUSQ=
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
 "@emotion/is-prop-valid@^0.8.8":
   version "0.8.8"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
@@ -1309,6 +1316,49 @@
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@react-native/polyfills/-/polyfills-2.0.0.tgz#4c40b74655c83982c8cf47530ee7dc13d957b6aa"
   integrity sha1-TEC3RlXIOYLIz0dTDufcE9lXtqo=
 
+"@react-navigation/core@^6.4.0":
+  version "6.4.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@react-navigation/core/-/core-6.4.0.tgz#c44d33a8d8ef010a102c7f831fc8add772678509"
+  integrity sha1-xE0zqNjvAQoQLH+DH8it13JnhQk=
+  dependencies:
+    "@react-navigation/routers" "^6.1.3"
+    escape-string-regexp "^4.0.0"
+    nanoid "^3.1.23"
+    query-string "^7.0.0"
+    react-is "^16.13.0"
+    use-latest-callback "^0.1.5"
+
+"@react-navigation/elements@^1.3.6":
+  version "1.3.6"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@react-navigation/elements/-/elements-1.3.6.tgz#fa700318528db93f05144b1be4b691b9c1dd1abe"
+  integrity sha1-+nADGFKNuT8FFEsb5LaRucHdGr4=
+
+"@react-navigation/native@^6.0.13":
+  version "6.0.13"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@react-navigation/native/-/native-6.0.13.tgz#ec504120e193ea6a7f24ffa765a1338be5a3160a"
+  integrity sha1-7FBBIOGT6mp/JP+nZaEzi+WjFgo=
+  dependencies:
+    "@react-navigation/core" "^6.4.0"
+    escape-string-regexp "^4.0.0"
+    fast-deep-equal "^3.1.3"
+    nanoid "^3.1.23"
+
+"@react-navigation/routers@^6.1.3":
+  version "6.1.3"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@react-navigation/routers/-/routers-6.1.3.tgz#1df51959e9a67c44367462e8b929b7360a5d2555"
+  integrity sha1-HfUZWemmfEQ2dGLouSm3NgpdJVU=
+  dependencies:
+    nanoid "^3.1.23"
+
+"@react-navigation/stack@^6.3.1":
+  version "6.3.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@react-navigation/stack/-/stack-6.3.1.tgz#71f53d7598332765da08f78b56aeae245cc98cb6"
+  integrity sha1-cfU9dZgzJ2XaCPeLVq6uJFzJjLY=
+  dependencies:
+    "@react-navigation/elements" "^1.3.6"
+    color "^4.2.3"
+    warn-once "^0.1.0"
+
 "@sideway/address@^4.1.3":
   version "4.1.4"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
@@ -1395,6 +1445,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/hammerjs@^2.0.36":
+  version "2.0.41"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@types/hammerjs/-/hammerjs-2.0.41.tgz#f6ecf57d1b12d2befcce00e928a6a097c22980aa"
+  integrity sha1-9uz1fRsS0r78zgDpKKagl8IpgKo=
+
 "@types/hoist-non-react-statics@*":
   version "3.3.1"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
@@ -1459,6 +1514,14 @@
   version "15.7.5"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha1-XxnSuFqY6VWANvajysyIGUIPBc8=
+
+"@types/react-native-vector-icons@^6.4.12":
+  version "6.4.12"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.12.tgz#4b9c63bf85eb42fca7c5b0a55ec317900e4fb427"
+  integrity sha1-S5xjv4XrQvynxbClXsMXkA5PtCc=
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
 
 "@types/react-native@*", "@types/react-native@^0.70.0":
   version "0.70.4"
@@ -2321,6 +2384,15 @@ cliui@^6.0.0:
     strip-ansi "^6.0.0"
     wrap-ansi "^6.2.0"
 
+cliui@^7.0.2:
+  version "7.0.4"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
+  integrity sha1-oCZe5lVHb8gHrqnfPfjfd4OAi08=
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.0"
+    wrap-ansi "^7.0.0"
+
 clone-deep@^4.0.1:
   version "4.0.1"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/clone-deep/-/clone-deep-4.0.1.tgz#c19fd9bdbbf85942b4fd979c84dcf7d5f07c2387"
@@ -2372,10 +2444,26 @@ color-name@1.1.3:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
-color-name@~1.1.4:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
+
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha1-RGf5FG8Db4Vbdk37W/hYK/NCx6Q=
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha1-14HsteVyJO5D6pYnVgEHwODGRjo=
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 colorette@^1.0.7:
   version "1.4.0"
@@ -3215,6 +3303,11 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+filter-obj@^1.1.0:
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/filter-obj/-/filter-obj-1.1.0.tgz#9b311112bc6c6127a16e016c6c5d7f19e0805c5b"
+  integrity sha1-mzERErxsYSehbgFsbF1/GeCAXFs=
+
 finalhandler@1.1.2:
   version "1.1.2"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/finalhandler/-/finalhandler-1.1.2.tgz#b7e7d000ffd11938d0fdb053506f6ebabe9f587d"
@@ -3367,7 +3460,7 @@ gensync@^1.0.0-beta.2:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha1-MqbudsPX9S1GsrGuXZP+qFgKJeA=
 
-get-caller-file@^2.0.1:
+get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
@@ -3727,6 +3820,11 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=
+
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha1-RXSirlb3qyBolvtDHq7tBm/fjwM=
 
 is-bigint@^1.0.1:
   version "1.0.4"
@@ -4708,7 +4806,7 @@ lodash.truncate@^4.4.2:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.7.0:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -5261,6 +5359,11 @@ ms@2.1.3:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
 
+nanoid@^3.1.23:
+  version "3.3.4"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
+  integrity sha1-cwtn480J4t6s8DwCfIHJ2dvF6Ks=
+
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -5793,7 +5896,7 @@ prompts@^2.0.1, prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha1-Z9h78aaU9IQ1zzMsJK8QIUoxQLU=
@@ -5820,6 +5923,16 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
+query-string@^7.0.0:
+  version "7.1.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/query-string/-/query-string-7.1.1.tgz#754620669db978625a90f635f12617c271a088e1"
+  integrity sha1-dUYgZp25eGJakPY18SYXwnGgiOE=
+  dependencies:
+    decode-uri-component "^0.2.0"
+    filter-obj "^1.1.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
 querystringify@^2.1.1:
   version "2.2.0"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
@@ -5843,12 +5956,17 @@ react-devtools-core@4.24.0:
     shell-quote "^1.6.1"
     ws "^7"
 
+react-freeze@^1.0.0:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-freeze/-/react-freeze-1.0.3.tgz#5e3ca90e682fed1d73a7cb50c2c7402b3e85618d"
+  integrity sha1-XjypDmgv7R1zp8tQwsdAKz6FYY0=
+
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.1.0:
   version "18.2.0"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha1-GZQx7qqi4J+GQn77tPFHPttHYJs=
 
-react-is@^16.13.1, react-is@^16.7.0:
+react-is@^16.13.0, react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
@@ -5868,10 +5986,26 @@ react-native-codegen@^0.70.5:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
+react-native-gesture-handler@^2.6.2:
+  version "2.6.2"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-gesture-handler/-/react-native-gesture-handler-2.6.2.tgz#f3b68d374f5dda603ff29f7df2edb39472eb97ce"
+  integrity sha1-87aNN09d2mA/8p998u2zlHLrl84=
+  dependencies:
+    "@egjs/hammerjs" "^2.0.17"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    lodash "^4.17.21"
+    prop-types "^15.7.2"
+
 react-native-gradle-plugin@^0.70.3:
   version "0.70.3"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha1-y88GGcv73aqRKHAaote0FF+cT8g=
+
+react-native-iphone-x-helper@^1.3.1:
+  version "1.3.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
+  integrity sha1-IMYD6aDnZf1vlzlmOL3rDlpgsBA=
 
 react-native-reanimated@^2.10.0:
   version "2.10.0"
@@ -5885,6 +6019,34 @@ react-native-reanimated@^2.10.0:
     lodash.isequal "^4.5.0"
     setimmediate "^1.0.5"
     string-hash-64 "^1.0.3"
+
+react-native-responsive-fontsize@^0.5.1:
+  version "0.5.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-responsive-fontsize/-/react-native-responsive-fontsize-0.5.1.tgz#c39fa2212ecced2bac879211a7b25106534f72d2"
+  integrity sha1-w5+iIS7M7Sush5IRp7JRBlNPctI=
+  dependencies:
+    react-native-iphone-x-helper "^1.3.1"
+
+react-native-safe-area-context@^4.4.1:
+  version "4.4.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-safe-area-context/-/react-native-safe-area-context-4.4.1.tgz#239c60b8a9a80eac70a38a822b04c0f1d15ffc01"
+  integrity sha1-I5xguKmoDqxwo4qCKwTA8dFf/AE=
+
+react-native-screens@^3.17.0:
+  version "3.17.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-screens/-/react-native-screens-3.17.0.tgz#b099b3ec9d46de07c857f14d713c293024c7c842"
+  integrity sha1-sJmz7J1G3gfIV/FNcTwpMCTHyEI=
+  dependencies:
+    react-freeze "^1.0.0"
+    warn-once "^0.1.0"
+
+react-native-vector-icons@^9.2.0:
+  version "9.2.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz#3c0c82e95defd274d56363cbe8fead8d53167ebd"
+  integrity sha1-PAyC6V3v0nTVY2PL6P6tjVMWfr0=
+  dependencies:
+    prop-types "^15.7.2"
+    yargs "^16.1.1"
 
 react-native-vision-camera@^2.14.1:
   version "2.14.1"
@@ -6409,6 +6571,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha1-qaF2f4r4QVURTqq9c/mSc8j1mtk=
 
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
+  dependencies:
+    is-arrayish "^0.3.1"
+
 sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
@@ -6532,6 +6701,11 @@ spdx-license-ids@^3.0.0:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/spdx-license-ids/-/spdx-license-ids-3.0.12.tgz#69077835abe2710b65f03969898b6637b505a779"
   integrity sha1-aQd4NavicQtl8DlpiYtmN7UFp3k=
 
+split-on-first@^1.0.0:
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/split-on-first/-/split-on-first-1.1.0.tgz#f610afeee3b12bce1d0c30425e76398b78249a5f"
+  integrity sha1-9hCv7uOxK84dDDBCXnY5i3gkml8=
+
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/split-string/-/split-string-3.1.0.tgz#7cb09dda3a86585705c64b39a6466038682e8fe2"
@@ -6580,6 +6754,11 @@ statuses@~1.5.0:
   version "1.5.0"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+strict-uri-encode@^2.0.0:
+  version "2.0.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
+  integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
 
 string-hash-64@^1.0.3:
   version "1.0.3"
@@ -7048,6 +7227,11 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
+use-latest-callback@^0.1.5:
+  version "0.1.5"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/use-latest-callback/-/use-latest-callback-0.1.5.tgz#a4a836c08fa72f6608730b5b8f4bbd9c57c04f51"
+  integrity sha1-pKg2wI+nL2YIcwtbj0u9nFfAT1E=
+
 use-sync-external-store@^1.0.0:
   version "1.2.0"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
@@ -7130,6 +7314,11 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-vUmNtHev5XPcBBhfAR06uKjXZT8=
   dependencies:
     makeerror "1.0.12"
+
+warn-once@^0.1.0:
+  version "0.1.1"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/warn-once/-/warn-once-0.1.1.tgz#952088f4fb56896e73fd4e6a3767272a3fccce43"
+  integrity sha1-lSCI9PtWiW5z/U5qN2cnKj/MzkM=
 
 wcwidth@^1.0.1:
   version "1.0.1"
@@ -7231,6 +7420,15 @@ wrap-ansi@^6.2.0:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
 
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha1-Z+FFz/UQpqaYS98RUpEdadLrnkM=
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
 wrappy@1:
   version "1.0.2"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
@@ -7287,6 +7485,11 @@ y18n@^4.0.0:
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/y18n/-/y18n-4.0.3.tgz#b5f259c82cd6e336921efd7bfd8bf560de9eeedf"
   integrity sha1-tfJZyCzW4zaSHv17/Yv1YN6e7t8=
 
+y18n@^5.0.5:
+  version "5.0.8"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
+  integrity sha1-f0k00PfKjFb5UxSTndzS3ZHOHVU=
+
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
@@ -7299,6 +7502,11 @@ yargs-parser@^18.1.2:
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
+
+yargs-parser@^20.2.2:
+  version "20.2.9"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
+  integrity sha1-LrfcOwKJcY/ClfNidThFxBoMlO4=
 
 yargs@^15.1.0, yargs@^15.3.1, yargs@^15.4.1:
   version "15.4.1"
@@ -7316,6 +7524,19 @@ yargs@^15.1.0, yargs@^15.3.1, yargs@^15.4.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
+
+yargs@^16.1.1:
+  version "16.2.0"
+  resolved "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/npm/registry/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
+  integrity sha1-HIK/D2tqZur85+8w43b0mhJHf2Y=
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.5"
+    yargs-parser "^20.2.2"
 
 yocto-queue@^0.1.0:
   version "0.1.0"
