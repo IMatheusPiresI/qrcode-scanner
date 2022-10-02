@@ -40,6 +40,7 @@ export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
   });
 
   const toastifySuccess = () => {
+    console.log('suuuuuuuuuuuuuuuuuuuuuuuuuuuccess');
     return (
       <S.ToastifyWrapper style={transformStyle}>
         <S.Toastify>
@@ -57,6 +58,7 @@ export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
   };
 
   const toastifyError = () => {
+    console.log('eeeeeeeeeeeeeeerro');
     return (
       <S.ToastifyWrapper style={transformStyle}>
         <S.Toastify>
@@ -74,14 +76,20 @@ export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
   };
 
   const renderToastify = () => {
-    if (qrCodeSucess === 'scanned') {
-      return toastifySuccess();
-    } else {
-      return toastifyError();
+    switch (qrCodeSucess) {
+      case 'scanned':
+        return toastifySuccess();
+
+      case 'not scanned':
+        return toastifyError();
+
+      default:
+        return <></>;
     }
   };
 
   useEffect(() => {
+    console.log(qrCodeSucess, 'consoel aqui em');
     renderToastify();
     transformOpactiyAnimation.value = 30;
     transformOpactiyAnimation.value = withTiming(0, {

@@ -15,13 +15,14 @@ import {BarcodeFormat, useScanBarcodes} from 'vision-camera-code-scanner';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {useTheme} from 'styled-components';
 import {Toastify} from '../../components/Toastify';
-import {useNavigation} from '@react-navigation/native';
+import {useFocusEffect, useNavigation} from '@react-navigation/native';
 
 const Scanner = () => {
   const [qrCodeSucess, setQrCodeSucess] = useState<
     'not scanned' | 'scanned' | ''
   >('');
   const [isScanned, setIsScanned] = useState(false);
+  const [openCamera, setOpenCamera] = useState(false);
   const theme = useTheme();
   const navigation = useNavigation();
 
@@ -71,7 +72,6 @@ const Scanner = () => {
               qrCodeValue: scanBarcode.rawValue!,
             });
           }, 1000);
-          console.log(scanBarcode.rawValue);
         }
       });
     } else {
@@ -84,15 +84,30 @@ const Scanner = () => {
   };
 
   useEffect(() => {
-    if (isScanned) {
-      toogleActiveState();
-      setIsScanned(false);
-    }
-  }, [barcodes, isScanned]);
-
-  useEffect(() => {
     requestCameraPermissions();
   }, []);
+
+  useFocusEffect(
+    useCallback(() => {
+      setOpenCamera(true);
+      setQrCodeSucess('');
+    }, []),
+  );
+
+  useFocusEffect(
+    useCallback(() => {
+      setOpenCamera(true);
+      if (isScanned) {
+        toogleActiveState();
+        setIsScanned(false);
+      }
+
+      return () => {
+        setIsScanned(false);
+        setOpenCamera(false);
+      };
+    }, [barcodes, isScanned]),
+  );
 
   return (
     <S.Container>
@@ -101,15 +116,13 @@ const Scanner = () => {
         translucent
         backgroundColor="transparent"
       />
-      {/* Notification */}
       {qrCodeSucess !== '' && <Toastify qrCodeSucess={qrCodeSucess} />}
 
-      {/* Camera */}
       <S.ScannerWrapper>
         <S.ImageBorder source={require('../../assets/images/border.png')} />
-        {renderCamera()}
+        {openCamera && renderCamera()}
       </S.ScannerWrapper>
-      {/*ButtonScan*/}
+
       <S.ButtonScanner onPress={handleScannerQRCode}>
         <S.Icon name="qr-code-scanner" size={30} color={theme.colors.aqua} />
         <S.TitleButton>SCAN</S.TitleButton>
