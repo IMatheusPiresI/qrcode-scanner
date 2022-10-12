@@ -42,7 +42,7 @@ export const ButtonScanner = styled(RectButton)`
 `;
 
 export const TitleButton = styled.Text`
-  font-size: ${RFValue(17)}px;
+  font-size: ${RFValue(14)}px;
   color: ${({theme}) => theme.colors.aqua};
   font-weight: 800;
   letter-spacing: 7px;

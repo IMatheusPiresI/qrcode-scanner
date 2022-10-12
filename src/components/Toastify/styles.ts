@@ -31,6 +31,6 @@ export const Toastify = styled.View`
 
 export const Title = styled.Text`
   margin-left: 20px;
-  font-size: ${RFValue(14)}px;
+  font-size: ${RFValue(12)}px;
   font-weight: 700;
 `;

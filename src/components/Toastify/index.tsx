@@ -1,17 +1,17 @@
 import React, {useEffect} from 'react';
-import {useTheme} from 'styled-components';
 import * as S from './styles';
+
+import {useTheme} from 'styled-components';
 import {
   interpolate,
   useSharedValue,
   useAnimatedStyle,
   withTiming,
-  BounceIn,
   Easing,
 } from 'react-native-reanimated';
 
 type ToastifyProps = {
-  qrCodeSucess: 'not scanned' | 'scanned' | '';
+  qrCodeSucess: 'not scanned' | 'scanned';
 };
 
 export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
@@ -40,7 +40,6 @@ export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
   });
 
   const toastifySuccess = () => {
-    console.log('suuuuuuuuuuuuuuuuuuuuuuuuuuuccess');
     return (
       <S.ToastifyWrapper style={transformStyle}>
         <S.Toastify>
@@ -58,14 +57,13 @@ export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
   };
 
   const toastifyError = () => {
-    console.log('eeeeeeeeeeeeeeerro');
     return (
       <S.ToastifyWrapper style={transformStyle}>
         <S.Toastify>
           <S.IconWrapper style={transformRotateStyle}>
             <S.IcontoastifyMaterial
               name="error"
-              size={23}
+              size={30}
               color={theme.colors.error}
             />
           </S.IconWrapper>
@@ -89,8 +87,6 @@ export const Toastify: React.FC<ToastifyProps> = ({qrCodeSucess}) => {
   };
 
   useEffect(() => {
-    console.log(qrCodeSucess, 'consoel aqui em');
-    renderToastify();
     transformOpactiyAnimation.value = 30;
     transformOpactiyAnimation.value = withTiming(0, {
       duration: 1000,

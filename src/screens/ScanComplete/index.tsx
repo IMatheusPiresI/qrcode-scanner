@@ -52,11 +52,6 @@ export const ScanComplete: React.FC = () => {
             </S.EventButton>
           </S.EventWrapper>
         )}
-        <S.EventWrapper>
-          <S.EventButton>
-            <S.EventText>View Value</S.EventText>
-          </S.EventButton>
-        </S.EventWrapper>
       </S.EventScanWrapper>
 
       <S.ButtonReturnScan onPress={handleReturnScan}>

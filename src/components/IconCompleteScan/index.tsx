@@ -4,7 +4,7 @@ import * as S from './styles';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {useTheme} from 'styled-components';
 
-import Animated, {
+import {
   useSharedValue,
   interpolate,
   useAnimatedStyle,

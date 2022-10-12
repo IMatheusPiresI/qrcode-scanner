@@ -16,47 +16,16 @@ import {RFValue} from 'react-native-responsive-fontsize';
 import {useTheme} from 'styled-components';
 import {Toastify} from '../../components/Toastify';
 import {useFocusEffect, useNavigation} from '@react-navigation/native';
+import {CameraScanner} from '../../components/CameraScanner';
 
 const Scanner = () => {
+  const theme = useTheme();
+  const navigation = useNavigation();
   const [qrCodeSucess, setQrCodeSucess] = useState<
     'not scanned' | 'scanned' | ''
   >('');
   const [isScanned, setIsScanned] = useState(false);
   const [openCamera, setOpenCamera] = useState(false);
-  const theme = useTheme();
-  const navigation = useNavigation();
-
-  //  Camera
-  const devices = useCameraDevices();
-  const device = devices.back;
-
-  const requestCameraPermissions = useCallback(async () => {
-    const permission = await Camera.requestCameraPermission();
-
-    if (permission === 'denied') return Linking.openSettings();
-  }, []);
-
-  const renderCamera = () => {
-    if (device == null) {
-      return <ActivityIndicator size="large" color={theme.colors.shape} />;
-    } else {
-      return (
-        <S.CameraWrapper>
-          <Camera
-            device={device}
-            isActive={true}
-            enableZoomGesture
-            style={{
-              width: RFValue(220),
-              height: RFValue(220),
-            }}
-            frameProcessor={frameProcessor}
-            frameProcessorFps={5}
-          />
-        </S.CameraWrapper>
-      );
-    }
-  };
 
   //  Barcode
 
@@ -83,13 +52,8 @@ const Scanner = () => {
     setIsScanned(true);
   };
 
-  useEffect(() => {
-    requestCameraPermissions();
-  }, []);
-
   useFocusEffect(
     useCallback(() => {
-      setOpenCamera(true);
       setQrCodeSucess('');
     }, []),
   );
@@ -120,7 +84,7 @@ const Scanner = () => {
 
       <S.ScannerWrapper>
         <S.ImageBorder source={require('../../assets/images/border.png')} />
-        {openCamera && renderCamera()}
+        {openCamera && <CameraScanner frameProcessor={frameProcessor} />}
       </S.ScannerWrapper>
 
       <S.ButtonScanner onPress={handleScannerQRCode}>

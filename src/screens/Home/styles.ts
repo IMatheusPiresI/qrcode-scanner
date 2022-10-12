@@ -2,6 +2,8 @@ import {TouchableOpacity} from 'react-native';
 import {RFValue} from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
+import Animated from 'react-native-reanimated';
+
 export const Container = styled.View`
   flex: 1;
   background-color: ${({theme}) => theme.colors.shape_dark};
@@ -9,9 +11,9 @@ export const Container = styled.View`
   justify-content: center;
 `;
 
-export const QRCodeWrapper = styled.View`
-  width: ${RFValue(225)}px;
-  height: ${RFValue(225)}px;
+export const QRCodeWrapper = styled(Animated.View)`
+  width: ${RFValue(200)}px;
+  height: ${RFValue(200)}px;
   background-color: ${({theme}) => theme.colors.shape};
 
   border-radius: 25px;
@@ -21,8 +23,8 @@ export const QRCodeWrapper = styled.View`
 `;
 
 export const ImageQRCode = styled.Image`
-  width: ${RFValue(200)}px;
-  height: ${RFValue(200)}px;
+  width: ${RFValue(180)}px;
+  height: ${RFValue(180)}px;
 `;
 
 export const Button = styled(TouchableOpacity)`
@@ -43,18 +45,24 @@ export const TitleButton = styled.Text`
   color: ${({theme}) => theme.colors.shape};
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 4px;
-  font-size: ${RFValue(16)}px;
+  letter-spacing: 2px;
+  font-size: ${RFValue(12)}px;
+  padding: 10px 5px;
 `;
 
 export const DescriptionWrapper = styled.View`
   width: ${RFValue(220)}px;
 `;
 
-export const Description = styled.Text`
+export const Description = styled(Animated.Text)`
   color: ${({theme}) => theme.colors.text_light};
-  font-size: ${RFValue(14)}px;
+  font-size: ${RFValue(13)}px;
 
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: justify;
+`;
+
+export const AnimatedViewButton = styled(Animated.View)`
+  overflow: hidden;
+  align-items: flex-start;
 `;
